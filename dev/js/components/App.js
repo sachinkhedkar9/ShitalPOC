@@ -24,26 +24,47 @@ class App extends Component {
   render() {
     const styles = require('../../scss/Login.scss');
     return (
-      <div className="html-page col-lg-3 col-md-4 col-sm-6 col-xs-6">
-        <div className={styles.loginPage + ' container'}>
-          <h1>Login</h1>
+      <div>
+        <div className="col-lg-4 col-md-4 col-sm-3 col-xs-3"></div>
+        <div className="html-page col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div className={styles.loginPage}>
+            <h2>Login</h2>
 
-          <div>
-            <form className="login-form form-inline" onSubmit={this.handleSubmit}>
-              <div className="form-group">
-                <input type="text" ref="username" placeholder="Enter a username" className="form-control" />
-              </div>
-              <button className="btn btn-lg btn-success" onClick={this.handleSubmit.bind(this)}><i className="fa fa-sign-in" />{' '}Log In
+            <form>
+              <div className="login-form form-inline form-group" onSubmit={this.handleSubmit}>
+                <div className="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <input type="text" ref="username" placeholder="Enter a username"
+                    className="form-control" />
+                </div>
+                <button className="btn btn-lg btn-success" onClick={this.handleSubmit.bind(this)}>
+                  <i className="fa fa-sign-in" />{' '}Log In
                   </button>
+              </div>
             </form>
           </div>
         </div>
+
+        <div className="col-lg-4 col-md-4 col-sm-3 col-xs-3"></div>
       </div>
-      /*   <div className={styles.app}>
-          <LinkContainer to="/dashboard">
-          <button>test</button>
-        </LinkContainer>
-        </div>*/
+      /*
+              <div className="container">
+                <h2>Form control: input</h2>
+                <p>The form below contains two input elements; one of type text and one of type password:</p>
+                <form>
+                  <div className="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" ref="username" placeholder="Enter a username" 
+                                 className="form-control" />
+                  </div>
+                </form>
+              </div>
+      
+           
+            /*   <div className={styles.app}>
+                <LinkContainer to="/dashboard">
+                <button>test</button>
+              </LinkContainer>
+              </div>*/
     );
   }
 }
