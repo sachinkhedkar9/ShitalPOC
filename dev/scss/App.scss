@@ -44,15 +44,15 @@ $color_silver: 	#C0C0C0;
 }
 
 body{
-    background: #bbffff;
+    background: $color_silver;
     margin: 50 auto;
     padding: 0 auto;
 }
 
 
 .html-page{
-  background: #FFFFFF;
-  margin: 50px auto;
+  background: $color_alabaster_approx;
+  margin-top: 25vh;
 }
 
 .sap-btn{
